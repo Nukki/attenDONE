@@ -18,4 +18,16 @@ public class OptionsActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void onHistoryClicked( View v) {
+        Intent intent = new Intent(this, HistoryActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void onExitClicked( View v) {
+        Intent intent = new Intent(this, WelcomeActivity.class);
+        startActivity(intent);
+
+    }
 }
