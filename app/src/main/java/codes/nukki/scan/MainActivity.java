@@ -18,12 +18,15 @@ import android.nfc.tech.NfcV;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashMap;
 
 public class MainActivity extends Activity {
-    HashMap<String, String> students = new HashMap<>();
+    HashMap<String, Student> students = new HashMap<>();
+    ListView attendance_list;
 
     // list of NFC technologies detected:
     private final String[][] techList = new String[][] {
@@ -42,7 +45,27 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        students.put("04275ABAB63780","ID: 11111111 Name: Nikki Jack");
+
+        addNewStudent("Aamir Aditya", "89724892", "04265ABAA63780");
+        addNewStudent("Henrike Abigaia", "64829482", "04272B63790");
+        addNewStudent("Sander Aemilia", "7982132", "04245ABA863180");
+        addNewStudent("Temur Czeslaw", "98173893", "04270ABAB63780");
+        addNewStudent("Lakeisha Dean", "24984878", "04275AYAB65780");
+        addNewStudent("Miroslav Dipak", "18971748", "04275BVAB63780");
+        addNewStudent("John Doe", "03859790", "042753BAB63780");
+        addNewStudent("Barta Ellis", "98726347", "03275ABAB63780");
+        addNewStudent("Mattithiah Izem", "87319374", "15275ABAB63780");
+        addNewStudent("Nikki Jack", "18397824", "04275ABAB63780");
+        addNewStudent("Dandan Lin", "9027389", "04216162583F80");
+        addNewStudent("Hiwot Mohini", "19083310", "04208ABAB63780");
+        addNewStudent("Fritz Sibylle", "81398010", "44274ABAB63780");
+        addNewStudent("Esther Song", "8917812", "040E63EA651E80");
+        addNewStudent("Weland Sophronia", "80193803", "84275ABAB63780");
+        addNewStudent("Sayaka Tamura", "29489244", "84275A3EW03780");
+        addNewStudent("Melvyn Teofilo", "08839679", "04275ATAB73780");
+
+        attendance_list = (ListView) findViewById(R.id.attendance_sheet);
+        attendance_list.setAdapter(new AttendeeListAdapter(this, students));
     }
 
 
@@ -74,8 +97,11 @@ public class MainActivity extends Activity {
     protected void onNewIntent(Intent intent) {
         if (intent.getAction().equals(NfcAdapter.ACTION_TAG_DISCOVERED)) {
             String tag = ByteArrayToHexString(intent.getByteArrayExtra(NfcAdapter.EXTRA_ID));
+
             if (students.containsKey(tag)) {
-                ((TextView)findViewById(R.id.text)).setText(students.get(tag));
+                //((TextView)findViewById(R.id.text)).setText(students.get(tag).name);
+                students.get(tag).status = true;
+                attendance_list.setAdapter(new AttendeeListAdapter(this, students));
             }
         }
     }
@@ -94,6 +120,15 @@ public class MainActivity extends Activity {
             out += hex[i];
         }
         return out;
+    }
+
+    private void addNewStudent(String name, String id, String seriaNum){
+        Student newStudent = new Student();
+        newStudent.name = name;
+        newStudent.ID = id;
+        newStudent.status = false;
+
+        students.put(seriaNum, newStudent);
     }
 
 }

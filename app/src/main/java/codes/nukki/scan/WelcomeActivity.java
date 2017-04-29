@@ -21,6 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
         import android.view.Menu;
         import android.widget.TextView;
+import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -70,7 +71,10 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         if (intent.getAction().equals(NfcAdapter.ACTION_TAG_DISCOVERED)) {
             String tag = ByteArrayToHexString(intent.getByteArrayExtra(NfcAdapter.EXTRA_ID));
-            if (tag.equals("04275ABAB63780")) {
+            //Toast.makeText(this, tag, Toast.LENGTH_LONG).show();
+            //04275ABAB63780
+
+            if (tag.equals("040E63EA651E80")) {
                 Intent changeIntent = new Intent(this, OptionsActivity.class);
                 startActivity(changeIntent);
             }
