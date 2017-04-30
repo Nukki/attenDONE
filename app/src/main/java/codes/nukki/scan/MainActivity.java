@@ -62,6 +62,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
 //        addNewStudent("Aamir Aditya", "89724892", "04265ABAA63780");
 //        addNewStudent("Henrike Abigaia", "64829482", "04272B63790");
 //        addNewStudent("Sander Aemilia", "7982132", "04245ABA863180");
@@ -79,6 +80,7 @@ public class MainActivity extends Activity {
 //        addNewStudent("Weland Sophronia", "80193803", "84275ABAB63780");
 //        addNewStudent("Sayaka Tamura", "29489244", "84275A3EW03780");
 //        addNewStudent("Melvyn Teofilo", "08839679", "04275ATAB73780");
+
 
         readStudentsFromJson();
         attendance_list = (ListView) findViewById(R.id.attendance_sheet);
