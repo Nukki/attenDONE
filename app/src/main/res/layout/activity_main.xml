@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="codes.nukki.scan.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Attendance sheet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="60sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <ListView
+        android:id="@+id/attendance_sheet"
+<<<<<<< HEAD
+        android:layout_width="wrap_content"
+        android:layout_height="498dp" />
+
+    <Button
+        android:id="@+id/done"
+        style="@style/Widget.AppCompat.Button.Colored"
+=======
+        android:layout_marginTop="20dp"
+>>>>>>> origin/eBranch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDoneClicked"
+        android:text="Done" />
+</LinearLayout>

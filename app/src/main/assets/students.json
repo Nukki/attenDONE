@@ -1,0 +1,120 @@
+{
+  "students": [
+    {
+      "tag": "04265ABAA63780",
+      "student": {
+        "name": "Aamir Aditya",
+        "id": "89724892",
+        "status": "false"
+      }
+    },
+    {
+      "tag": "04272B63790",
+      "student": {
+        "name": "Henrike Abigaia",
+        "id": "64829482",
+        "status": "false"
+      }
+    },
+    {
+      "tag": "04245ABA863180",
+      "student": {
+        "name": "Sander Aemilia",
+        "id": "7982132",
+        "status": "false"
+      }
+    },{
+      "tag": "04270ABAB63780",
+      "student": {
+        "name": "Temur Czeslaw",
+        "id": "98173893",
+        "status": "false"
+      }
+    },{
+      "tag": "04275AYAB65780",
+      "student": {
+        "name": "Lakeisha Dean",
+        "id": "24984878",
+        "status": "false"
+      }
+    },{
+      "tag": "04275BVAB63780",
+      "student": {
+        "name": "Miroslav Dipak",
+        "id": "18971748",
+        "status": "false"
+      }
+    },{
+      "tag": "042753BAB63780",
+      "student": {
+        "name": "John Doe",
+        "id": "03859790",
+        "status": "false"
+      }
+    },{
+      "tag": "03275ABAB63780",
+      "student": {
+        "name": "Barta Ellis",
+        "id": "98726347",
+        "status": "false"
+      }
+    },{
+      "tag": "04275ABAB63780",
+      "student": {
+        "name": "Nikki Jack",
+        "id": "18397824",
+        "status": "false"
+      }
+    },{
+      "tag": "04216162583F80",
+      "student": {
+        "name": "Dandan Lin",
+        "id": "9027389",
+        "status": "false"
+      }
+    },{
+      "tag": "04208ABAB63780",
+      "student": {
+        "name": "Hiwot Mohini",
+        "id": "19083310",
+        "status": "false"
+      }
+    },{
+      "tag": "44274ABAB63780",
+      "student": {
+        "name": "Fritz Sibylle",
+        "id": "81398010",
+        "status": "false"
+      }
+    },{
+      "tag": "040E63EA651E80",
+      "student": {
+        "name": "Esther Song",
+        "id": "8917812",
+        "status": "false"
+      }
+    },{
+      "tag": "84275ABAB63780",
+      "student": {
+        "name": "Weland Sophronia",
+        "id": "80193803",
+        "status": "false"
+      }
+
+    }, {
+      "tag": "84275A3EW03780",
+      "student": {
+        "name": "Sayaka Tamura",
+        "id": "29489244",
+        "status": "false"
+      }
+    },{
+      "tag": "04275ATAB73780",
+      "student": {
+        "name": "Melvyn Teofilo",
+        "id": "8917812",
+        "status": "false"
+      }
+    }
+  ]
+}
