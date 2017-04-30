@@ -74,7 +74,7 @@ public class WelcomeActivity extends AppCompatActivity {
             //Toast.makeText(this, tag, Toast.LENGTH_LONG).show();
             //04275ABAB63780
 
-            if (tag.equals("040E63EA651E80")) {
+            if (tag.equals("04275ABAB63780")) {
                 Intent changeIntent = new Intent(this, OptionsActivity.class);
                 startActivity(changeIntent);
             }
