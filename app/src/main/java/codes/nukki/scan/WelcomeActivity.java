@@ -31,7 +31,7 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-<<<<<<< HEAD
+
 import android.view.Menu;
 import android.view.View;
 import android.view.animation.Animation;
@@ -46,11 +46,11 @@ import org.w3c.dom.Text;
 import java.security.Timestamp;
 import java.util.Date;
 import java.util.logging.Handler;
-=======
+
         import android.view.Menu;
         import android.widget.TextView;
 import android.widget.Toast;
->>>>>>> a8c8fecdd9d3ee297439ea72604a4f02e2d8c618
+
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -154,14 +154,14 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         if (intent.getAction().equals(NfcAdapter.ACTION_TAG_DISCOVERED)) {
             String tag = ByteArrayToHexString(intent.getByteArrayExtra(NfcAdapter.EXTRA_ID));
-<<<<<<< HEAD
-            if (tag.equals("04216162583F80")) {
-=======
+
+
+
             //Toast.makeText(this, tag, Toast.LENGTH_LONG).show();
             //04275ABAB63780
 
             if (tag.equals("04275ABAB63780")) {
->>>>>>> a8c8fecdd9d3ee297439ea72604a4f02e2d8c618
+
                 Intent changeIntent = new Intent(this, OptionsActivity.class);
                 startActivity(changeIntent);
 
