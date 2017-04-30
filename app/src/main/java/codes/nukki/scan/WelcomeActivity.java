@@ -155,13 +155,10 @@ public class WelcomeActivity extends AppCompatActivity {
         if (intent.getAction().equals(NfcAdapter.ACTION_TAG_DISCOVERED)) {
             String tag = ByteArrayToHexString(intent.getByteArrayExtra(NfcAdapter.EXTRA_ID));
 
-
-
             //Toast.makeText(this, tag, Toast.LENGTH_LONG).show();
             //04275ABAB63780
 
             if (tag.equals("04275ABAB63780")) {
-
                 Intent changeIntent = new Intent(this, OptionsActivity.class);
                 startActivity(changeIntent);
 
