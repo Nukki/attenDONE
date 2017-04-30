@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.io.Serializable;
+import java.util.Map;
+
 public class OptionsActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +23,9 @@ public class OptionsActivity extends AppCompatActivity {
     }
 
     public void onHistoryClicked( View v) {
+        Map<String, Integer> pref = (Map<String,Integer>)getIntent().getSerializableExtra("missed");
         Intent intent = new Intent(this, HistoryActivity.class);
+        intent.putExtra("missed", (Serializable) pref);
         startActivity(intent);
 
     }

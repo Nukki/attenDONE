@@ -10,13 +10,13 @@
         android:layout_marginTop="10dp"
         android:background="@color/colorPrimary"
         android:textAlignment="center"
-        android:textSize="60sp" />
+        android:textSize="36sp" />
 
     <ListView
         android:id="@+id/attendance_sheet"
 
         android:layout_width="wrap_content"
-        android:layout_height="498dp" />
+        android:layout_height="455dp" />
 
     <Button
         android:id="@+id/done"

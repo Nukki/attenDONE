@@ -32,6 +32,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -179,6 +180,7 @@ public class MainActivity extends Activity {
 
 //        writeAttendanceToHistory();
         Intent intent = new Intent(this, OptionsActivity.class);
+        intent.putExtra("missed", (Serializable) sharedPref.getAll());
         startActivity(intent);
     }
 
