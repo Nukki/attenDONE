@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -41,18 +42,17 @@ public class AttendeeListAdapter extends BaseAdapter{
         View row = inflater.inflate(R.layout.attendee_list_row, parent, false);
 
         TextView name_txt_v = (TextView) row.findViewById(R.id.name_txt_v);
-        TextView status_txt_v = (TextView) row.findViewById(R.id.status_txt_v);
+        ImageView status_img_v = (ImageView) row.findViewById(R.id.status_img_v);
 
         Map.Entry<String, Student> item = getItem(pos); //get the entry
 
-        name_txt_v.setText(item.getValue().name);   //set the name
+        name_txt_v.setText(item.getValue().name);       //set the name
 
-        if(item.getValue().status){         //set status
-            status_txt_v.setText("P");
+        if(item.getValue().status){                     //set status image
+            status_img_v.setBackgroundResource(R.drawable.checkboxchecked);
         } else {
-            status_txt_v.setText("X");
+            status_img_v.setBackgroundResource(R.drawable.checkbox);
         }
-
         return row;
     }
 }

@@ -52,12 +52,10 @@ public class MainActivity extends Activity {
         addNewStudent("Temur Czeslaw", "98173893", "04270ABAB63780");
         addNewStudent("Lakeisha Dean", "24984878", "04275AYAB65780");
         addNewStudent("Miroslav Dipak", "18971748", "04275BVAB63780");
-        addNewStudent("John Doe", "03859790", "042753BAB63780");
         addNewStudent("Barta Ellis", "98726347", "03275ABAB63780");
         addNewStudent("Mattithiah Izem", "87319374", "15275ABAB63780");
         addNewStudent("Nikki Jack", "18397824", "04275ABAB63780");
         addNewStudent("Dandan Lin", "9027389", "04216162583F80");
-        addNewStudent("Hiwot Mohini", "19083310", "04208ABAB63780");
         addNewStudent("Fritz Sibylle", "81398010", "44274ABAB63780");
         addNewStudent("Esther Song", "8917812", "040E63EA651E80");
         addNewStudent("Weland Sophronia", "80193803", "84275ABAB63780");
