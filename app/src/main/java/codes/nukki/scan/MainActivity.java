@@ -19,12 +19,9 @@ import android.nfc.tech.NfcV;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
-<<<<<<< HEAD
 import android.view.Window;
-=======
 import android.view.View;
 import android.widget.ListView;
->>>>>>> a8c8fecdd9d3ee297439ea72604a4f02e2d8c618
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -65,11 +62,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-        students.put("04275ABAB63780","ID: 11111111 Name: Nikki Jack");
+
 
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-=======
+
 
 
 //        addNewStudent("Aamir Aditya", "89724892", "04265ABAA63780");
@@ -94,8 +90,6 @@ public class MainActivity extends Activity {
         readStudentsFromJson();
         attendance_list = (ListView) findViewById(R.id.attendance_sheet);
         attendance_list.setAdapter(new AttendeeListAdapter(this, students));
-
->>>>>>> a8c8fecdd9d3ee297439ea72604a4f02e2d8c618
     }
 
 

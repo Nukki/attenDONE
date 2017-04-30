@@ -48,17 +48,11 @@ public class AttendeeListAdapter extends BaseAdapter{
 
         name_txt_v.setText(item.getValue().name);       //set the name
 
-<<<<<<< HEAD
-        if(item.getValue().status){         //set status
-            status_img_v.setImageResource(R.drawable.checkboxchecked);
-        } else {
-            status_img_v.setImageResource(R.drawable.checkbox);
-=======
+
         if(item.getValue().status){                     //set status image
             status_img_v.setBackgroundResource(R.drawable.checkboxchecked);
         } else {
             status_img_v.setBackgroundResource(R.drawable.checkbox);
->>>>>>> 61fbbc570dd76dd2a00c23ea6f6955a05172dd9d
         }
         return row;
     }
