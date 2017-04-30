@@ -3,14 +3,27 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="60sp" />
+
     <ListView
         android:id="@+id/attendance_sheet"
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="498dp" />
 
     <Button
         android:id="@+id/done"
         style="@style/Widget.AppCompat.Button.Colored"
+=======
+        android:layout_marginTop="20dp"
+>>>>>>> origin/eBranch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onDoneClicked"
