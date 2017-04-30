@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,7 +20,6 @@ public class AttendeeListAdapter extends BaseAdapter{
         StudentData = new ArrayList();
         StudentData.addAll(map.entrySet());
     }
-
     @Override
     public int getCount(){
         return StudentData.size();
@@ -37,22 +37,22 @@ public class AttendeeListAdapter extends BaseAdapter{
 
     @Override
     public View getView(int pos, View convertView, ViewGroup parent){
+
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row = inflater.inflate(R.layout.attendee_list_row, parent, false);
 
         TextView name_txt_v = (TextView) row.findViewById(R.id.name_txt_v);
-        TextView status_txt_v = (TextView) row.findViewById(R.id.status_txt_v);
+        ImageView status_img_v = (ImageView) row.findViewById(R.id.status_img_v);
 
         Map.Entry<String, Student> item = getItem(pos); //get the entry
 
         name_txt_v.setText(item.getValue().name);   //set the name
 
         if(item.getValue().status){         //set status
-            status_txt_v.setText("P");
+            status_img_v.setImageResource(R.drawable.checkboxchecked);
         } else {
-            status_txt_v.setText("X");
+            status_img_v.setImageResource(R.drawable.checkbox);
         }
-
         return row;
     }
 }
