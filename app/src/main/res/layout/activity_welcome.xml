@@ -2,17 +2,107 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/attenDONE"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="codes.nukki.scan.WelcomeActivity">
+    android:background="@color/fffff0"
+    android:theme="@android:style/Theme.Light"
+    tools:context="codes.nukki.scan.WelcomeActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!-- android:background="@drawable/gradientcolorchange"-->
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/fffff0"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
         android:text=" WeLCOME "
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="139dp" />
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/commandText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+    <!--app:layout_constraintBottom_toTopOf="@+id/copyrightText"-->
+
+    <!--
+    <TextView
+        android:id="@+id/copyrightText"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/white"
+        android:text="CopyRight"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+    -->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="191dp"
+        android:layout_height="161dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/fffff0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/fffff0"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/name3"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/commandText"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="68dp"
+        android:background="@color/fffff0"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/welcomeText"
+        app:layout_constraintRight_toRightOf="@+id/welcomeText"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
 </android.support.constraint.ConstraintLayout>

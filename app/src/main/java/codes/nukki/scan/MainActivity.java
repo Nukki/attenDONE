@@ -18,6 +18,7 @@ import android.nfc.tech.NfcV;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.Window;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -43,6 +44,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         students.put("04275ABAB63780","ID: 11111111 Name: Nikki Jack");
+
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
     }
 
 
