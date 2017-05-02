@@ -18,7 +18,7 @@ Watch the demo:
 
 
 ***
-# Created by team okAPI:
+### Created by team okAPI:
 * Nikki Jack
 * Esther Song
 * Dandan Lin
