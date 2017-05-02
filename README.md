@@ -1,10 +1,13 @@
 
+
+
 ![attenDONE][logo]
 
 [logo]: https://github.com/Nukki/attenDONE/raw/master/app/src/main/res/drawable/name3.png "App name"
 Android app for marking attendance using your phone as NFC scanner to read NFC tags from college IDs
 
 ## attenDONE was awarded Honorable Mentions at CUNYhackathon Spring'17
+
 ***
 ### Features:
 * professor uses his ID card as the main authentication factor to log in. The app will open only if professor's ID card was tapped against the phone
@@ -25,5 +28,6 @@ Android app for marking attendance using your phone as NFC scanner to read NFC t
 * Andrey Pykhanstsev
 * Sayaka Tamura
 
+***
 ### Disclaimer
 Current apk is a demo for CUNYhackathon. It is configured to open with a certain professor id. It will not let you open the app.
