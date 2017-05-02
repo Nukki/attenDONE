@@ -31,4 +31,4 @@ Android app for marking attendance. It turns your phone into NFC scanner to read
 
 ***
 ### Disclaimer
-Current apk is a demo for CUNYhackathon. It is configured to open with a certain professor id. It will not let you open the app.
+Current apk is a demo for CUNYhackathon. It is configured to open with a certain professor id. It will not let get past the login screen and create an attendance sheet.
