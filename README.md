@@ -15,3 +15,11 @@ Features:
 Watch the demo:
 
 [![demo](http://img.youtube.com/vi/ULR1QrEeLk8/0.jpg)](http://www.youtube.com/watch?v=ULR1QrEeLk8)
+
+
+Created by team okAPI:
+* Nikki Jack
+* Esther Song
+* Dandan Lin
+* Andrey Pykhanstsev
+* Sayaka Tamura
