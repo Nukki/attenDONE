@@ -22,11 +22,12 @@ Android app for marking attendance. It turns your phone into NFC scanner to read
 
 ***
 ### Team okAPI:
-* Nikki Jack [@Nukki](https://github.com/Nukki)
-* Esther Song [@songesu](https://github.com/songesu)
-* Dandan Lin [@Dandanlin0702](https://github.com/Dandanlin0702)
-* Andrey Pykhanstsev [@nblxanueb](https://github.com/nblxanueb)
-* Sayaka Tamura [@sayaka-tamura](https://github.com/sayaka-tamura)
+* <a href="https://github.com/Nukki">Nikki Jack</a>
+* <a href="https://github.com/songesu">Esther Song</a>
+* <a href="https://github.com/Dandanlin0702">Dandan Lin</a>
+* <a href="https://github.com/nblxanueb">Andrey Pykhanstsev</a>
+* <a href="https://github.com/sayaka-tamura">Sayaka Tamura</a>
+
 
 ***
 ### Disclaimer
