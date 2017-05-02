@@ -3,6 +3,7 @@
 
 [logo]: https://github.com/Nukki/attenDONE/raw/master/app/src/main/res/drawable/name3.png "App name"
 Android app for marking attendance using NFC and college IDs
+
 **attenDONE was awarded Honorable Mentions at CUNYhackathon Spring'17**
 
 Features:
