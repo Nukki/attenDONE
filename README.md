@@ -9,7 +9,7 @@ Android app for marking attendance using your phone as NFC scanner to read NFC t
 ### Features:
 * professor uses his ID card as the main authentication factor to log in. The app will open only if professor's ID card was tapped against the phone
 * students tap their college ID cards to mark themselves present in attendance sheet
-* in "attendence history" section professor sees the names of students who had absences and the number of absences. 
+* in "attendance history" section professor sees the names of students who had absences and the number of absences. 
 ***
 
 ### Watch the demo:
