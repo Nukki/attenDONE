@@ -18,9 +18,12 @@ Android app for marking attendance using NFC and college IDs
 
 
 ***
-### Created by team okAPI:
+### Team okAPI:
 * Nikki Jack
 * Esther Song
 * Dandan Lin
 * Andrey Pykhanstsev
 * Sayaka Tamura
+
+### Disclaimer
+Current apk is a demo for CUNYhackathon. It is configured to open with a certain professor id. It will not let you open the app.
